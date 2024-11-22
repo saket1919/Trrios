@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TRRIOS</title>
+    <style>
+        /* Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(to right, #141e30, #243b55);
+            color: #fff;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            margin: 0;
+        }
+
+        /* Container */
+        .container {
+            text-align: center;
+            width: 90%;
+            max-width: 1200px;
+            padding: 20px;
+        }
+
+        /* Header */
+        header {
+            margin-bottom: 20px;
+        }
+
+        header h1 {
+            font-size: 3.5rem;
+            font-weight: 700;
+            color: #00d9ff;
+            text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.8);
+        }
+
+        /* Description Section */
+        .description {
+            font-size: 1.2rem;
+            margin: 20px auto 40px;
+            background: rgba(0, 0, 0, 0.5);
+            border-radius: 15px;
+            padding: 20px;
+            line-height: 1.8;
+            max-width: 800px;
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.5);
+        }
+
+        /* Logos Section */
+        .logos {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            flex-wrap: wrap;
+        }
+
+        .logo {
+            width: 120px;
+            height: 120px;
+            background: #00d9ff;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+            transition: all 0.3s ease;
+            position: relative;
+            text-decoration: none;
+        }
+
+        .logo:hover {
+            transform: scale(1.1);
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.6);
+            background: #ff5733;
+        }
+
+        .logo div {
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: #fff;
+            text-align: center;
+        }
+
+        .logo-title {
+            position: absolute;
+            bottom: -30px;
+            font-size: 0.9rem;
+            font-weight: 500;
+            color: #fff;
+        }
+
+        /* Middle Line and Text */
+        .middle-section {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 40px 0;
+            width: 100%;
+            position: relative;
+        }
+
+        .middle-section hr {
+            width: 100%;
+            border: 1px solid white;
+            position: absolute;
+        }
+
+        .middle-text {
+            background: linear-gradient(to right, #141e30, #243b55);
+            padding: 0 10px;
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: #00d9ff;
+            z-index: 1;
+        }
+
+        /* Footer */
+        footer {
+            margin-top: 40px;
+            padding: 20px 0;
+            background: rgba(0, 0, 0, 0.7);
+            width: 100%;
+            text-align: center;
+        }
+
+        footer p {
+            font-size: 1rem;
+            color: #ccc;
+        }
+
+        footer a {
+            color: #00d9ff;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2.5rem;
+            }
+
+            .description {
+                font-size: 1rem;
+                padding: 15px;
+            }
+
+            .logo {
+                width: 100px;
+                height: 100px;
+            }
+
+            .logo-title {
+                font-size: 0.8rem;
+                bottom: -20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <header>
+            <h1>TRRIOS</h1>
+        </header>
+
+        <!-- Middle Line with Text -->
+        <div class="middle-section">
+            <hr>
+            <div class="middle-text">Shrini Sensei</div>
+        </div>
+
+        <!-- Description -->
+        <p class="description">
+            TRRIOS is a cutting-edge platform designed for learners who aspire to achieve more. With its intuitive interface and innovative tools, it provides a seamless experience for acquiring new skills and knowledge. Join TRRIOS to embark on a journey of growth and success.
+        </p>
+
+        <!-- Logos -->
+        <div class="logos">
+            <a href="https://weather-app-s.streamlit.app/" class="logo">
+                <div>Weather App</div>
+                <span class="logo-title">Weather Module</span>
+            </a>
+            <a href="https://google.com" class="logo">
+                <div>Logo 2</div>
+                <span class="logo-title">Interactive Tools</span>
+            </a>
+            <a href="https://google.com" class="logo">
+                <div>Logo 3</div>
+                <span class="logo-title">Skill Development</span>
+            </a>
+            <a href="https://google.com" class="logo">
+                <div>Logo 4</div>
+                <span class="logo-title">Progress Tracking</span>
+            </a>
+        </div>
+
+        <!-- Footer -->
+        <footer>
+            <p>© 2024 TRRIOS | All Rights Reserved | <a href="https://google.com">Privacy Policy</a></p>
+        </footer>
+    </div>
+</body>
+</html>
